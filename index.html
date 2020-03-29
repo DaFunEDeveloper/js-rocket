@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>JS Rocket</title>
+	<title>My Epic Calculator</title>
 	<script type="text/javascript">
-		var name = 'My Name'
-		var sayMyName = function (name) {
-			alert('My Name Is '+ name); 
-		}
+		var operation = prompt('What operation would you like to do? (please answer in lower case)')
 
-		var car = {
-			make: 'VW',
-			type: 'Polo',
-			color: 'blue',
-			isTurnedOn: false,
-			numberOfWheels: 4,
-			seats: ['seat 1', 'seat 2', 'seat 3', 'seat 4'],
-			turnOn: function () {
-				car.isTurnedOn = true;
-			},
-			fly: function () {
-				alert('fly');
-			},
-			switchCar: function (isOn) {
-				console.log('turn car '+isOn);
-				if (isOn == true) {
-					car.isTurnedOn = true;
-				} else {
-					car.isTurnedOn = false;
-				}
-			}
-		};
-
-		console.log('hello there friends!');
+if(operation == 'multiplication') {
+	var noOne = prompt('Name the first number');
+	var noTwo = prompt ('Name the second number');
+	var finNo = noOne * noTwo;
+	alert('The product is ' + finNo);
+}
+if(operation == 'division') {
+	var noOne = prompt('Name the first number');
+	var noTwo = prompt ('Name the second number');
+	var finNo = noOne / noTwo;
+	alert('The quotient is ' + finNo);
+}
+if(operation == 'subtraction') {
+	var noOne = prompt('Name the first number');
+	var noTwo = prompt ('Name the second number');
+	var finNo = noOne - noTwo;
+	alert('The difference is ' + finNo);
+}
+if(operation == 'addition') {
+	var noOne = prompt('Name the first number');
+	var noTwo = prompt ('Name the second number');
+	var negOne = 0 - noOne;
+	var finNo = noTwo - negOne;
+	alert('The sum is ' + finNo);
+}
 	</script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<h1>In Inspect, In Console, type "name =" and then Your Name</h1>
-	<a href="#" onclick="sayMyName(name);">Say My Name</a>
+	<h1>My Epic Calculator</h1>
 </body>
 </html>
 
